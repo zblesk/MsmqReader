@@ -18,4 +18,4 @@ The component reads three of the MSMQ message's properties: body, label and ID. 
 
 For a long time I haven't been able to figure out why the package complains about not being able to write to a property (at runtime), and other similar errors.
 
-Turns out I had to use `gacutil` to register the DLL. Since I didn't want to copy the .NET SDK to the production servers, I've tried different approaches to registering the library with GAC, but even though most of them seemed to have worked (judging from their output), the SSIS failed to load the library. Only after copying
+Turns out I had to use `gacutil` to register the DLL. Since I didn't want to copy the .NET SDK to the production servers, I've tried different approaches to registering the library with GAC, but even though most of them seemed to have worked (judging from their output), the SSIS failed to load the library. It only worked after copying the SDK and calling `gacutil`.
