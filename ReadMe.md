@@ -5,7 +5,9 @@ This component provides the queue reading functionality.
 
 As always when registering a new component to be used by the SSIS (and in the Data Tools designer), you will have to copy the DLL into the [special SQL folders and register it in GAC](http://agilebi.com/mcole/2009/08/18/adding-custom-components-to-ssis/). A script doing this with the Release version of the DLL is included - see `registerComponent.ps1`.
 
-The component reads three of the MSMQ message's properties: body, label and ID. I hadn't needed any other, and YAGNI and all that. Adding more fields should be fairly straightforward, though.
+The component reads three of the MSMQ message's properties: body, label and ID. I hadn't needed any other, and YAGNI and all that. Adding more fields should be fairly straightforward, though. 
+
+There is a blog post about it [here](http://zblesk.net/blog/2015/02/08/msmq-reader-component-for-ssis/).
 
 ## Additional remarks
 
