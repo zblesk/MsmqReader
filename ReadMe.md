@@ -1,5 +1,7 @@
 # MsmqReader
 
+[![Build status](https://ci.appveyor.com/api/projects/status/9ov45yj3injewo36?svg=true)](https://ci.appveyor.com/project/zblesk/msmqreader)
+
 While SSIS packages can communicate through MSMQ, there doesn't really seem to be a comfortable way of just reading data from your custom queue. (From what I've found it virtually seems the only supported scenario is using MSMQ to pass messages in a specific format, between two SSIS packages.)
 This component provides the queue reading functionality.
 
